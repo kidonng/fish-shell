@@ -48,7 +48,6 @@ include_cpp! {
     #include "wutil.h"
     #include "builtins/bind.h"
     #include "builtins/commandline.h"
-    #include "builtins/read.h"
     #include "builtins/ulimit.h"
 
     safety!(unsafe_ffi)
@@ -77,7 +76,6 @@ include_cpp! {
 
     generate!("builtin_bind")
     generate!("builtin_commandline")
-    generate!("builtin_read")
     generate!("builtin_ulimit")
 
     generate!("init_input")

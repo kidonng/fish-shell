@@ -1,4 +1,7 @@
 //! Implementation of the bind builtin.
+use std::{ffi::CString, sync::MutexGuard};
+
+use crate::null_terminated_array::{AsNullTerminatedArray, OwningNullTerminatedArray};
 
 use super::prelude::*;
 
